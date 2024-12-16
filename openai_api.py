@@ -1,11 +1,10 @@
 # speech -> text 함수
 
-from dotenv import load_dotenv
 from openai import OpenAI
 import os
 import base64
 
-load_dotenv()
+# streamlit cloud 환경에서는 dot.env 대신, streamlit의 secret 기능 사용
 
 client = OpenAI() # api_key = OPENAI_API_KEY
 
